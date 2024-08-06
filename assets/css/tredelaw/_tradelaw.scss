@@ -1,0 +1,58 @@
+#tradelaw {
+    .p-tradelaw {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .__container {
+            padding-top: 100px;
+            padding-bottom: 50px;
+            @include media-sp {
+                padding-top: 50px;
+                padding-bottom: 30px;
+            }
+            .__tradelaw-ttl {
+                font-size: 36px;
+                font-weight: 700;
+                padding-bottom: 30px;
+                @include media-sp {
+                    font-size: 24px;
+                }
+            }
+            .__tradelaw-main {
+                width: 100%;
+                .__tradelaw-item {
+                    display: flex;
+                    justify-content: flex-start;
+                    border: #9ac0dd 1px solid;
+                    border-bottom: unset;
+                    @include media-sp {
+                        flex-direction: column;
+                    }
+                    &:last-child {
+                        border-bottom: #9ac0dd 1px solid;
+                    }
+                }
+                .__item-ttl {
+                    max-width: 350px;
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: 600;
+                    padding: 10px 20px;
+                    background-color: #9ac0dd;
+                    border-bottom: 1px solid white;
+                    @include media-sp {
+                        font-size: 18px;
+                    }
+                }
+                .__tradelaw-ctn {
+                    padding: 10px;
+                    font-size: 16px;
+                    font-weight: normal;
+                    @include media-sp {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
