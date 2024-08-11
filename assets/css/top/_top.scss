@@ -27,12 +27,20 @@
                         }
                     }
                 }
+                .__fv-sbttl {
+                    font-family: "Oooh Baby", cursive;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 32px;
+                    color: #0094FF;
+                }
                 .__fv-ctn {
                     padding-top: 12px;
-                    font-size: 24px;
-                    font-weight: 700;
+                    font-size: 16px;
+                    font-weight: 400;
                     @include media-sp {
-                        font-size: 18px;
+                        font-size: 14px;
+                        font-weight: 400;
                     }
                 }
                 .__fv-items {
@@ -193,7 +201,7 @@
                 text-align: center;
                 .__ttl-en {
                     font-size: 24px;
-                    font-weight: 600px;
+                    font-weight: 600;
                     color: #0094FF;
                     @include media-sp {
                         font-size: 16px;
@@ -394,7 +402,7 @@
                         text-align: center;
                         padding-top: 10px;
                         color: #0094FF;
-                        font-weight: 400;
+                        font-weight: 600;
                         @include media-sp {
                             font-size: 16px;
                         }
@@ -426,7 +434,7 @@
                 text-align: center;
                 .__ttl-en {
                     font-size: 24px;
-                    font-weight: 600px;
+                    font-weight: 600;
                     color: #0094FF;
                     @include media-sp {
                         font-size: 16px;

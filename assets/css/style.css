@@ -16,7 +16,7 @@
     font-size: 0.078125vw;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   *,
   ::after,
   ::before {
@@ -154,7 +154,7 @@ figure {
 .is-pc {
   display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .is-pc {
     display: none !important;
   }
@@ -163,7 +163,7 @@ figure {
 .is-sp {
   display: none !important;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .is-sp {
     display: block !important;
   }
@@ -184,7 +184,7 @@ figure {
   height: 96px;
   z-index: 11;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .c-header {
     height: 90px;
   }
@@ -210,7 +210,7 @@ figure {
   color: white;
   font-size: 32px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .c-header__inner h1 .logo {
     font-size: 20px;
   }
@@ -220,7 +220,7 @@ figure {
     padding: 31rem 80rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .c-header__inner {
     padding: 20px 20px;
   }
@@ -228,7 +228,7 @@ figure {
 .c-header__inner.scroll {
   padding: 0 80px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .c-header__inner.scroll {
     padding: 5px 40px;
   }
@@ -267,11 +267,17 @@ figure {
 }
 .c-header-right li a {
   text-decoration: none;
+  font-size: 20px;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  color: white;
+  transition: color 0.3s;
 }
-.c-header-right li:hover {
+.c-header-right li a:hover {
   color: #c3bfbd;
 }
-.c-header-right li:hover::after {
+.c-header-right li a:hover::after {
   transform: rotate(-180deg) translateY(60%);
 }
 .c-header .__link-wrap {
@@ -329,7 +335,7 @@ figure {
   position: fixed;
   top: 10px;
   right: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   background: var(--base-white, #FAFAFA);
   display: inline-flex;
 }
@@ -384,6 +390,12 @@ figure {
 }
 .c-header .sp-menu__container .__items li a {
   text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  color: #0094FF;
+  border-bottom: 2px solid #0094FF;
 }
 .c-header .sp-menu__container .__items li ul li {
   margin-top: 15px;
@@ -433,7 +445,7 @@ figure {
   padding: 60px;
   background-color: #1B1B1B;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .c-footer {
     padding: 30px;
   }
@@ -443,7 +455,7 @@ figure {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .c-footer .__bar {
     flex-direction: column;
     justify-content: flex-start;
@@ -456,7 +468,7 @@ figure {
   color: white;
   font-weight: 600;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .c-footer .__bar .logo {
     font-size: 18px;
   }
@@ -467,7 +479,7 @@ figure {
   justify-content: center;
   gap: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .c-footer .__bar .__link-wrap {
     gap: 20px;
   }
@@ -477,7 +489,7 @@ figure {
   font-weight: normal;
   color: white;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .c-footer .__bar .__link-wrap .__wrap-item {
     font-size: 16px;
   }
@@ -511,7 +523,7 @@ figure {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-fv .__container {
     flex-direction: column;
   }
@@ -520,7 +532,7 @@ figure {
   font-size: 48px;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-fv .__container .__fv-left .__fv-ttl {
     font-size: 24px;
   }
@@ -530,20 +542,28 @@ figure {
   color: #0094FF;
   text-wrap: nowrap;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-fv .__container .__fv-left .__fv-ttl span {
     text-wrap: wrap;
     font-size: 32px;
   }
 }
+#top .p-fv .__container .__fv-left .__fv-sbttl {
+  font-family: "Oooh Baby", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: #0094FF;
+}
 #top .p-fv .__container .__fv-left .__fv-ctn {
   padding-top: 12px;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 400;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-fv .__container .__fv-left .__fv-ctn {
-    font-size: 18px;
+    font-size: 14px;
+    font-weight: 400;
   }
 }
 #top .p-fv .__container .__fv-left .__fv-items {
@@ -553,7 +573,7 @@ figure {
   align-items: center;
   gap: 10px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-fv .__container .__fv-left .__fv-items {
     padding-top: 40px;
     padding-left: 0;
@@ -572,7 +592,7 @@ figure {
   font-size: 24px;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-fv .__container .__fv-left .__fv-items .__fv-item {
     width: 100px;
     height: 100px;
@@ -590,7 +610,7 @@ figure {
 #top .p-fv .__container .__fv-img {
   transform: translateX(25%);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-fv .__container .__fv-img {
     transform: translateX(0%);
     width: 100%;
@@ -611,7 +631,7 @@ figure {
   padding-top: 100px;
   padding-bottom: 140px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-about .__container {
     padding-top: 50px;
     padding-bottom: 60px;
@@ -625,7 +645,7 @@ figure {
   font-weight: 600px;
   color: #0094FF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-about .__container .__about-ttl .__ttl-en {
     font-size: 16px;
   }
@@ -634,7 +654,7 @@ figure {
   font-size: 48px;
   font-weight: 600;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-about .__container .__about-ttl .__ttl-jp {
     font-size: 28px;
   }
@@ -642,7 +662,7 @@ figure {
 #top .p-about .__container .__about-ttl .__ttl-jp span {
   color: #0094FF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-about .__container .__about-ttl .__ttl-jp span {
     font-size: 28px;
   }
@@ -655,7 +675,7 @@ figure {
   padding-top: 90px;
   transform: translateX(-10%);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-about .__container .__about-main {
     flex-direction: column-reverse;
     padding-top: 40px;
@@ -679,7 +699,7 @@ figure {
   width: 140px;
   border-bottom: 5px solid #0094FF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-about .__container .__about-main .__main-ctn .__ctn--ttl {
     font-size: 24px;
     padding-bottom: 20px;
@@ -690,12 +710,12 @@ figure {
 #top .p-about .__container .__about-main .__main-ctn .__ctn--ttl span {
   color: #0094FF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-about .__container .__about-main .__main-ctn .__ctn--ttl span {
     font-size: 24px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-about .__container .__about-main .__main-ctn .__ctn--ttl {
     border-bottom: 2px solid #0094FF;
   }
@@ -706,7 +726,7 @@ figure {
   max-width: 420px;
   padding-top: 36px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-about .__container .__about-main .__main-ctn .__ctn--detail {
     font-size: 16px;
   }
@@ -720,7 +740,7 @@ figure {
   padding-top: 80px;
   padding-bottom: 64px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service .__container {
     padding-top: 40px;
     padding-bottom: 30px;
@@ -731,10 +751,10 @@ figure {
 }
 #top .p-service .__container .__service-ttl .__ttl-en {
   font-size: 24px;
-  font-weight: 600px;
+  font-weight: 600;
   color: #0094FF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service .__container .__service-ttl .__ttl-en {
     font-size: 16px;
   }
@@ -743,7 +763,7 @@ figure {
   font-size: 48px;
   font-weight: 600;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service .__container .__service-ttl .__ttl-jp {
     font-size: 28px;
   }
@@ -770,7 +790,7 @@ figure {
   width: 140px;
   border-bottom: 5px solid #0094FF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service .__container .__service-main .__main--ttl {
     font-size: 24px;
     width: -moz-max-content;
@@ -781,7 +801,7 @@ figure {
 #top .p-service .__container .__service-main .__main--ttl span {
   font-size: 48px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service .__container .__service-main .__main--ttl span {
     font-size: 32px;
   }
@@ -792,7 +812,7 @@ figure {
   font-weight: 600;
   padding-top: 35px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service .__container .__service-main .__main-ctn {
     font-size: 16px;
   }
@@ -804,7 +824,7 @@ figure {
   justify-content: space-around;
   gap: 35px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service .__container .__service-main .__main--flow {
     align-items: center;
     justify-content: center;
@@ -836,7 +856,7 @@ figure {
 #top .p-service .__container .__service-main .__main--flow .__flow--intro {
   padding-top: 130px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service .__container .__service-main .__main--flow .__flow--intro {
     padding-top: 0;
   }
@@ -860,7 +880,7 @@ figure {
   border: 2px solid #0094FF;
   transition: all 0.5s;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service .__container .__service-main .__main-btn {
     padding: 15px;
     width: 100%;
@@ -880,7 +900,7 @@ figure {
   padding-top: 80px;
   padding-bottom: 64px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service-two .__container {
     padding-top: 40px;
     padding-bottom: 30px;
@@ -901,7 +921,7 @@ figure {
   width: 140px;
   border-bottom: 5px solid #0094FF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service-two .__container .__main--ttl {
     font-size: 24px;
     width: -moz-max-content;
@@ -912,12 +932,12 @@ figure {
 #top .p-service-two .__container .__main--ttl span {
   font-size: 48px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service-two .__container .__main--ttl span {
     font-size: 32px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service-two .__container {
     padding-top: 40px;
   }
@@ -927,7 +947,7 @@ figure {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service-two .__container .__main-body {
     flex-direction: column;
   }
@@ -935,7 +955,7 @@ figure {
 #top .p-service-two .__container .__main-left {
   padding-top: 90px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service-two .__container .__main-left {
     padding-top: 40px;
   }
@@ -945,7 +965,7 @@ figure {
   font-weight: 700;
   color: #0094FF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service-two .__container .__main-left .__left-ttl {
     font-size: 24px;
   }
@@ -955,7 +975,7 @@ figure {
   font-size: 20px;
   font-weight: 600;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service-two .__container .__main-left .__left-ctn {
     padding-top: 20px;
     font-size: 16px;
@@ -968,9 +988,9 @@ figure {
   text-align: center;
   padding-top: 10px;
   color: #0094FF;
-  font-weight: 400;
+  font-weight: 600;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service-two .__container .__main-left .__left-img .__left-info {
     font-size: 16px;
   }
@@ -979,7 +999,7 @@ figure {
   padding-top: 90px;
   transform: translateX(21%);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-service-two .__container .__main-right {
     padding-top: 40px;
     transform: translateX(0%);
@@ -994,7 +1014,7 @@ figure {
   padding-top: 84px;
   padding-bottom: 95px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-company .__container {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -1005,10 +1025,10 @@ figure {
 }
 #top .p-company .__container .__company-ttl .__ttl-en {
   font-size: 24px;
-  font-weight: 600px;
+  font-weight: 600;
   color: #0094FF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-company .__container .__company-ttl .__ttl-en {
     font-size: 16px;
   }
@@ -1017,7 +1037,7 @@ figure {
   font-size: 48px;
   font-weight: 600;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-company .__container .__company-ttl .__ttl-jp {
     font-size: 28px;
   }
@@ -1025,7 +1045,7 @@ figure {
 #top .p-company .__container .__company-ttl .__ttl-jp span {
   color: #0094FF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-company .__container .__company-ttl .__ttl-jp span {
     font-size: 28px;
   }
@@ -1037,7 +1057,7 @@ figure {
   justify-content: space-between;
   align-items: flex-start;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-company .__container .__company-main {
     padding-top: 40px;
     flex-direction: column;
@@ -1048,7 +1068,7 @@ figure {
   height: 367px;
   background-color: #D9D9D9;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-company .__container .__company-main .__map {
     width: 100%;
     height: 250px;
@@ -1063,7 +1083,7 @@ figure {
 #top .p-company .__container .__company-main .__company-info .__info-item .__item-ttl {
   font-size: 24px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-company .__container .__company-main .__company-info .__info-item .__item-ttl {
     font-size: 18px;
   }
@@ -1073,7 +1093,7 @@ figure {
   font-weight: 600;
   padding-top: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #top .p-company .__container .__company-main .__company-info .__info-item .__item-ctn {
     font-size: 12px;
   }
@@ -1088,7 +1108,7 @@ figure {
   background-position: center;
   background-size: 100% 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-fv {
     background-size: cover;
   }
@@ -1097,7 +1117,7 @@ figure {
   padding-top: 113px;
   padding-bottom: 133px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-fv .__container {
     padding-top: 50px;
     padding-bottom: 60px;
@@ -1108,7 +1128,7 @@ figure {
   color: white;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-fv .__container .__fv-ttl {
     font-size: 30px;
   }
@@ -1118,7 +1138,7 @@ figure {
   color: #0094FF;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-fv .__container .__fv-subttl {
     font-size: 20px;
   }
@@ -1130,9 +1150,9 @@ figure {
 }
 #service .p-taskList .__container {
   padding-top: 90px;
-  padding-bottom: 140px;
+  padding-bottom: 70px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-taskList .__container {
     padding-top: 50px;
     padding-bottom: 60px;
@@ -1152,7 +1172,7 @@ figure {
   width: max-content;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-taskList .__container .__list-ttl .__ttl-main {
     font-size: 24px;
   }
@@ -1177,8 +1197,11 @@ figure {
   padding-top: 40px;
   font-size: 20px;
   font-weight: 600;
+  text-align: center;
+  max-width: 804px;
+  margin: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-taskList .__container .__list-ttl .__ttl-ctn {
     font-size: 16px;
   }
@@ -1190,7 +1213,7 @@ figure {
   row-gap: 30px;
   margin: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-taskList .__container .__list-items {
     padding-top: 50px;
     grid-template-columns: 1fr;
@@ -1199,7 +1222,7 @@ figure {
 #service .p-taskList .__container .__list-items .__list-item {
   max-width: 310px;
   width: 100%;
-  height: 235px;
+  /* height: 235px; */
   border: #0094FF 5px solid;
   display: flex;
   align-items: center;
@@ -1207,20 +1230,45 @@ figure {
   flex-direction: column;
   padding-top: 24px;
   margin: auto;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 769px) {
+  #service .p-taskList .__container .__list-items .__list-item {
+    width: 300px !important;
+    height: 262px !important;
+  }
 }
 #service .p-taskList .__container .__list-items .__list-item .__item-ttl {
   font-size: 20px;
   font-weight: 700;
   color: #0094FF;
   padding-bottom: 20px;
+  text-align: center;
 }
 #service .p-taskList .__container .__list-items .__list-item .__item-img {
   padding-bottom: 15px;
+  width: 100%;
+  height: 109px;
+}
+#service .p-taskList .__container .__list-items .__list-item .__item-img img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #service .p-taskList .__container .__list-items .__list-item .__item-ctn {
   font-size: 14px;
   font-weight: 500;
   text-align: center;
+}
+#service .p-taskList .__container .__list-ctn {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 20px;
+}
+@media screen and (max-width: 769px) {
+  #service .p-taskList .__container .__list-ctn {
+    font-size: 15px;
+  }
 }
 #service .p-service-two {
   display: flex;
@@ -1232,7 +1280,7 @@ figure {
   padding-top: 80px;
   padding-bottom: 64px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-service-two .__container {
     padding-top: 40px;
     padding-bottom: 30px;
@@ -1253,7 +1301,7 @@ figure {
   width: 140px;
   border-bottom: 5px solid #0094FF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-service-two .__container .__main--ttl {
     font-size: 24px;
     width: -moz-max-content;
@@ -1264,77 +1312,42 @@ figure {
 #service .p-service-two .__container .__main--ttl span {
   font-size: 48px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-service-two .__container .__main--ttl span {
     font-size: 32px;
   }
 }
-@media screen and (max-width: 768px) {
-  #service .p-service-two .__container {
-    padding-top: 40px;
-  }
-}
 #service .p-service-two .__container .__main-body {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-@media screen and (max-width: 768px) {
-  #service .p-service-two .__container .__main-body {
-    flex-direction: column;
-  }
-}
-#service .p-service-two .__container .__main-left {
   padding-top: 90px;
 }
-@media screen and (max-width: 768px) {
-  #service .p-service-two .__container .__main-left {
+@media screen and (max-width: 769px) {
+  #service .p-service-two .__container .__main-body {
     padding-top: 40px;
   }
 }
-#service .p-service-two .__container .__main-left .__left-ttl {
-  font-size: 36px;
-  font-weight: 700;
-  color: #0094FF;
+#service .p-service-two .__container .__main-body .__main-body_img {
+  padding-right: 30px;
+  padding-left: 20px;
 }
-@media screen and (max-width: 768px) {
-  #service .p-service-two .__container .__main-left .__left-ttl {
-    font-size: 24px;
-  }
-}
-#service .p-service-two .__container .__main-left .__left-ctn {
-  padding-top: 40px;
+#service .p-service-two .__container .__main-body_ctn {
+  padding-top: 60px;
+  text-align: center;
+  margin: auto;
+  max-width: 810px;
   font-size: 20px;
   font-weight: 600;
+  padding-bottom: 80px;
 }
-@media screen and (max-width: 768px) {
-  #service .p-service-two .__container .__main-left .__left-ctn {
-    padding-top: 20px;
-    font-size: 16px;
+@media screen and (max-width: 769px) {
+  #service .p-service-two .__container .__main-body_ctn {
+    padding-top: 30px;
+    font-size: 15px;
+    padding-bottom: 40px;
   }
 }
-#service .p-service-two .__container .__main-left .__left-img {
-  padding-top: 50px;
-}
-#service .p-service-two .__container .__main-left .__left-img .__left-info {
-  text-align: center;
-  padding-top: 10px;
-  color: #0094FF;
-  font-weight: 400;
-}
-@media screen and (max-width: 768px) {
-  #service .p-service-two .__container .__main-left .__left-img .__left-info {
-    font-size: 16px;
-  }
-}
-#service .p-service-two .__container .__main-right {
-  padding-top: 90px;
-  transform: translateX(21%);
-}
-@media screen and (max-width: 768px) {
-  #service .p-service-two .__container .__main-right {
+@media screen and (max-width: 769px) {
+  #service .p-service-two .__container {
     padding-top: 40px;
-    transform: translateX(0%);
   }
 }
 #service .p-company {
@@ -1346,7 +1359,7 @@ figure {
   padding-top: 84px;
   padding-bottom: 95px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-company .__container {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -1360,7 +1373,7 @@ figure {
   font-weight: 600px;
   color: #0094FF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-company .__container .__company-ttl .__ttl-en {
     font-size: 16px;
   }
@@ -1369,7 +1382,7 @@ figure {
   font-size: 48px;
   font-weight: 600;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-company .__container .__company-ttl .__ttl-jp {
     font-size: 28px;
   }
@@ -1377,7 +1390,7 @@ figure {
 #service .p-company .__container .__company-ttl .__ttl-jp span {
   color: #0094FF;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-company .__container .__company-ttl .__ttl-jp span {
     font-size: 28px;
   }
@@ -1389,7 +1402,7 @@ figure {
   justify-content: space-between;
   align-items: flex-start;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-company .__container .__company-main {
     padding-top: 40px;
     flex-direction: column;
@@ -1400,7 +1413,7 @@ figure {
   height: 367px;
   background-color: #D9D9D9;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-company .__container .__company-main .__map {
     width: 100%;
     height: 250px;
@@ -1415,7 +1428,7 @@ figure {
 #service .p-company .__container .__company-main .__company-info .__info-item .__item-ttl {
   font-size: 24px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-company .__container .__company-main .__company-info .__info-item .__item-ttl {
     font-size: 18px;
   }
@@ -1425,10 +1438,15 @@ figure {
   font-weight: 600;
   padding-top: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #service .p-company .__container .__company-main .__company-info .__info-item .__item-ctn {
     font-size: 12px;
   }
+}
+#service .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #tradelaw .p-tradelaw {
@@ -1440,7 +1458,7 @@ figure {
   padding-top: 100px;
   padding-bottom: 50px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #tradelaw .p-tradelaw .__container {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -1451,7 +1469,7 @@ figure {
   font-weight: 700;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #tradelaw .p-tradelaw .__container .__tradelaw-ttl {
     font-size: 24px;
   }
@@ -1465,7 +1483,7 @@ figure {
   border: #9ac0dd 1px solid;
   border-bottom: unset;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #tradelaw .p-tradelaw .__container .__tradelaw-main .__tradelaw-item {
     flex-direction: column;
   }
@@ -1482,7 +1500,7 @@ figure {
   background-color: #9ac0dd;
   border-bottom: 1px solid white;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #tradelaw .p-tradelaw .__container .__tradelaw-main .__item-ttl {
     font-size: 18px;
   }
@@ -1492,7 +1510,7 @@ figure {
   font-size: 16px;
   font-weight: normal;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   #tradelaw .p-tradelaw .__container .__tradelaw-main .__tradelaw-ctn {
     font-size: 14px;
   }
