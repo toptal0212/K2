@@ -1,3 +1,35 @@
+// $(document).ready(function() {
+//     function initializeSlick() {
+//         if ($(window).width() <= 767) {
+//             $('.__list-items').slick({
+//                 infinite: true,
+//                 slidesToShow: 1,
+//                 slidesToScroll: 1,
+//                 dots: true,
+//                 arrows: false
+//             });
+//         }
+//     }
+
+//     // Initialize slick on page load if condition is met
+//     initializeSlick();
+
+//     // Reinitialize slick when window is resized
+//     $(window).resize(function() {
+//         if ($(window).width() <= 767 && !$('.__list-items').hasClass('slick-initialized')) {
+//             $('.__list-items').slick({
+//                 infinite: true,
+//                 slidesToShow: 1,
+//                 slidesToScroll: 1,
+//                 dots: true,
+//                 arrows: false
+//             });
+//         } else if ($(window).width() > 767 && $('.__list-items').hasClass('slick-initialized')) {
+//             $('.__list-items').slick('unslick');
+//         }
+//     });
+// });
+
 $(document).ready(function() {
     function initializeSlick() {
         if ($(window).width() <= 767) {
@@ -11,10 +43,8 @@ $(document).ready(function() {
         }
     }
 
-    // Initialize slick on page load if condition is met
     initializeSlick();
 
-    // Reinitialize slick when window is resized
     $(window).resize(function() {
         if ($(window).width() <= 767 && !$('.__list-items').hasClass('slick-initialized')) {
             $('.__list-items').slick({
@@ -28,7 +58,17 @@ $(document).ready(function() {
             $('.__list-items').slick('unslick');
         }
     });
+
+    // Button controls
+    $('#nextButton').click(function() {
+        $('.__list-items').slick('slickNext');
+    });
+
+    $('#prevButton').click(function() {
+        $('.__list-items').slick('slickPrev');
+    });
 });
+
 
 $(function() {
     $.getJSON('./json/pref_city.json', function(data) {

@@ -1448,6 +1448,21 @@ figure {
   align-items: center;
   justify-content: center;
 }
+#service #prevButton,
+#service #nextButton {
+  position: absolute;
+  font-size: 24px;
+  background-color: unset;
+  color: #D9D9D9;
+}
+#service #prevButton {
+  left: 3%;
+  top: 63%;
+}
+#service #nextButton {
+  right: 3%;
+  top: 63%;
+}
 
 #tradelaw .p-tradelaw {
   display: flex;
