@@ -42,6 +42,7 @@
                     border-bottom: 1px solid white;
                     @include media-sp {
                         font-size: 18px;
+                        max-width: 500px;
                     }
                 }
                 .__tradelaw-ctn {

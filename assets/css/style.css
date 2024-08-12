@@ -395,7 +395,6 @@ figure {
   padding-left: 15px;
   padding-bottom: 20px;
   color: #0094FF;
-  border-bottom: 2px solid #0094FF;
 }
 .c-header .sp-menu__container .__items li ul li {
   margin-top: 15px;
@@ -526,6 +525,7 @@ figure {
 @media screen and (max-width: 769px) {
   #top .p-fv .__container {
     flex-direction: column;
+    padding-top: 40px;
   }
 }
 #top .p-fv .__container .__fv-left .__fv-ttl {
@@ -1503,6 +1503,7 @@ figure {
 @media screen and (max-width: 769px) {
   #tradelaw .p-tradelaw .__container .__tradelaw-main .__item-ttl {
     font-size: 18px;
+    max-width: 500px;
   }
 }
 #tradelaw .p-tradelaw .__container .__tradelaw-main .__tradelaw-ctn {
